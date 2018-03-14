@@ -5,8 +5,10 @@ class Application
     req = Rack::Request.new(env)
 
     if req.path=="/items/Figs"
+      # Returns the price for figs when you go to this path
       resp.write "#{@@items[0].price}"
     elsif req.path=="/items/Apples"
+      # Tells the client the items not found and gives them a 400 error
       resp.write "Item not found"
       resp.status = 400
     else
