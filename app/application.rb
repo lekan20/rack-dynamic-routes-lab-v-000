@@ -9,7 +9,7 @@ class Application
     #   item = @@items.find{|item| item.name == item_name}
     #   resp.write item.price
     binding.pry
-    if req.path=="Figs"
+    if req.path=="/items/Figs"
       binding.pry
       resp.write "#{@@items[0].price}"
     else
