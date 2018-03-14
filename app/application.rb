@@ -10,7 +10,7 @@ class Application
     #   resp.write item.price
     # binding.pry
     if req.path=="/items/Figs"
-      binding.pry
+      # binding.pry
       resp.write "#{@@items[0].price}"
     else
       resp.write "Route not found"
