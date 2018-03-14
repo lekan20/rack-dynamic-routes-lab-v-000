@@ -10,6 +10,8 @@ class Application
     #   resp.write item.price
     if req.path=="/items/Figs"
       resp.write "#{@@items[0].price}"
+    elsif req.path=="items/Apples"
+      resp.write "Item not found"
     else
       resp.write "Route not found"
       resp.status = 404
