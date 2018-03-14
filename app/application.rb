@@ -9,6 +9,7 @@ class Application
     #   item = @@items.find{|item| item.name == item_name}
     #   resp.write item.price
     if req.path=="/Figs/"
+      binding.pry
       # resp.write "#{  }"
     else
       resp.write "Route not found"
