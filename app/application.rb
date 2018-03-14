@@ -12,6 +12,7 @@ class Application
       resp.write "Item not found"
       resp.status = 400
     else
+      # If the path doesn't exist, we tell the client the route can't be found and return a 404 error.
       resp.write "Route not found"
       resp.status = 404
     end
